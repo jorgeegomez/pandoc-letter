@@ -69,13 +69,16 @@ The following can be set either as variables when executing `pandoc` or added to
 :   Amount for closing signature block to be intended from left margin.
 
 `date`
-:   Custom date (current date will be automatically inserted if not specified).
+:   Custom date (will be omitted if `false` or not specified; for current date, use `\today`).
 
 `encl`
 :   List of enclosures.
 
 `letterhead`
 :   Image file to be used as letterhead (requires the [wallpaper][] package), applied only to the first page.
+
+`footer`
+:   Image file to be used as footer (requires the [wallpaper][] package), applied only to the first page.
 
 `opening`
 :   Text for the salutation.
