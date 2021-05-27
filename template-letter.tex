@@ -204,6 +204,8 @@ $endif$
 
 $if(date)$
 \date{$date$}
+$else$
+\date{}
 $endif$
 
 $for(header-includes)$
@@ -256,6 +258,11 @@ $endif$
 $if(letterhead)$
 \usepackage{wallpaper}
 \ThisULCornerWallPaper{1}{$letterhead$}
+$endif$
+
+$if(footer)$
+\usepackage{wallpaper}
+\ThisLLCornerWallPaper{1}{$footer$}
 $endif$
 
 \begin{document}
